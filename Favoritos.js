@@ -19,14 +19,26 @@ function buscarlibro() {
             }
             console.log(datos);
         });
-        
-    
+
+
 }
-let data;
+
+let listado = [];
+function guardarlibro() {
+    let titulo = document.getElementById("title").value;
+    window.alert(titulo);
+    listado.push(titulo);
+    localStorage.setItem("listado",JSON.stringify(listado));
+    document.getElementById("div1").innerHTML= listado
+}
+/*let data;
 function mostrar() {
-    data=document.getElementById("title").value;
-    document.getElementById("div1").innerHTML= data; 
-localStorage.setItem("libro", JSON.stringify(title));
-        console.log(JSON.parse(localStorage.getItem("title")));
-    } 
+    data = document.getElementById("title").value;
+    document.getElementById("div1").innerHTML =
+        `<h1>${data.title}</h1>
+    <img src="${data.cover}" alt="" />
+    <p>${data.author}</p>`;
+    localStorage.setItem("title", JSON.stringify(title));
+    console.log(JSON.parse(localStorage.getItem("title")));
+}*/
 
