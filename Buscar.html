@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favoritos</title>
+    <title>BUSCAR</title>
     <link rel="stylesheet" href="Index.css">
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+
 </head>
+
 <body>
     <Header>
         <div id="Header">
             <div id="Titulo">
-                <img src="logo.png"width="300px" height="150px" alt="">
-                
+                <img src="Verde_Cuchara_Vegetariano_Restaurante_Logotipo-removebg-preview.png" width="100px"
+                    height="100px" alt="">
+
+            
             </div>
             <div id="Enlaces">
                 <a href="Home.html">Home</a>
-                <a href="Buscar.html">Buscar</a>
-                <a href="categoria.html">Categorias</a>
-                
-                
+                <a href="categoria.html">Categorías</a>
+                <a href="Favoritos.html">Favoritos</a>
             </div>
         </div>
 
     </Header>
     <hr />
-    
-
-  <!--<input type="text" id="title" placeholder="Título del libro..." />
-    <button onclick= "buscarlibro()"> Buscar </button> -->
-    <button id="botonmostrar" onclick= "mostrarfavoritos()"> Mostrar favoritos </button>
-
-    
-    <div id="div1"></div>
-    <script src="./Favoritos.js"></script>
-
+<div id="busqueda">
+    <input type="text" id="title" placeholder="Título del libro..." />
+    <button id="botonbuscar"onclick= "buscarlibro()"> Buscar </button>
+</div>
+<div id="bucarfondo">
+    <div id="div2"></div>
+    <script src="./Buscar.js"></script>
+</div>
     <footer>
         <div id="footermain">
             <div id="SEGUNDACOLUMNA">
 
-                
+                <div id="columna2">
                     <div>
                         <h3>Contacto</h3>
                         <p>LIBROS REFES</p>
@@ -46,14 +52,14 @@
                         <p>Email: contact@librosrefes.com</p>
 
                     </div>
-                
-                
+                </div>
+                <div id="columna3">
                     <div>
                         <h5>Contáctanos</h5>
                         <p>Atendemos de lunes-viernes en el horario de 9:00-13:00
                         </p>
                     </div>
-                
+                </div>
             </div>
 
         </div>
@@ -65,5 +71,7 @@
         </div>
 
     </footer>
+
 </body>
+
 </html>
